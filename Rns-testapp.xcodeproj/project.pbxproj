@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4981500696B727533DD90B81 /* Pods_Rns_testapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A01D1C808A8630CF36A78E /* Pods_Rns_testapp.framework */; };
 		783192F822A6A347005AA2E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783192F722A6A347005AA2E0 /* AppDelegate.swift */; };
 		783192FA22A6A347005AA2E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783192F922A6A347005AA2E0 /* ViewController.swift */; };
 		783192FD22A6A347005AA2E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783192FB22A6A347005AA2E0 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11A01D1C808A8630CF36A78E /* Pods_Rns_testapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rns_testapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57715D8457B84F9696F8ECEC /* Pods-Rns-testapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rns-testapp.release.xcconfig"; path = "Target Support Files/Pods-Rns-testapp/Pods-Rns-testapp.release.xcconfig"; sourceTree = "<group>"; };
 		783192F422A6A347005AA2E0 /* Rns-testapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rns-testapp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		783192F722A6A347005AA2E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		783192F922A6A347005AA2E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,8 @@
 		7831931322A6A348005AA2E0 /* Rns-testappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rns-testappUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7831931722A6A348005AA2E0 /* Rns_testappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rns_testappUITests.swift; sourceTree = "<group>"; };
 		7831931922A6A348005AA2E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7831932622A6A40D005AA2E0 /* rns_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = rns_ios.framework; path = ../../Desktop/rns_ios.framework; sourceTree = "<group>"; };
+		9E2A67B579FF1283BB44BCD5 /* Pods-Rns-testapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rns-testapp.debug.xcconfig"; path = "Target Support Files/Pods-Rns-testapp/Pods-Rns-testapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4981500696B727533DD90B81 /* Pods_Rns_testapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72A459C8CE3EACC3A60270D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E2A67B579FF1283BB44BCD5 /* Pods-Rns-testapp.debug.xcconfig */,
+				57715D8457B84F9696F8ECEC /* Pods-Rns-testapp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		783192EB22A6A347005AA2E0 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +96,8 @@
 				7831930B22A6A348005AA2E0 /* Rns-testappTests */,
 				7831931622A6A348005AA2E0 /* Rns-testappUITests */,
 				783192F522A6A347005AA2E0 /* Products */,
+				7831932522A6A40C005AA2E0 /* Frameworks */,
+				72A459C8CE3EACC3A60270D6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,15 @@
 			path = "Rns-testappUITests";
 			sourceTree = "<group>";
 		};
+		7831932522A6A40C005AA2E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7831932622A6A40D005AA2E0 /* rns_ios.framework */,
+				11A01D1C808A8630CF36A78E /* Pods_Rns_testapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7831931C22A6A348005AA2E0 /* Build configuration list for PBXNativeTarget "Rns-testapp" */;
 			buildPhases = (
+				4A9460519F40C3344611ACA4 /* [CP] Check Pods Manifest.lock */,
 				783192F022A6A347005AA2E0 /* Sources */,
 				783192F122A6A347005AA2E0 /* Frameworks */,
 				783192F222A6A347005AA2E0 /* Resources */,
+				E9210443CB9089241AD2F974 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +278,67 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A9460519F40C3344611ACA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rns-testapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9210443CB9089241AD2F974 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rns-testapp/Pods-Rns-testapp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Rns/Rns.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Web3/Web3.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1.swift/secp256k1.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rns.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Web3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rns-testapp/Pods-Rns-testapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		783192F022A6A347005AA2E0 /* Sources */ = {
@@ -430,6 +519,7 @@
 		};
 		7831931D22A6A348005AA2E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E2A67B579FF1283BB44BCD5 /* Pods-Rns-testapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +528,7 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					/Users/federuiz/Desktop,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sirius.Rns-testapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -448,6 +539,7 @@
 		};
 		7831931E22A6A348005AA2E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57715D8457B84F9696F8ECEC /* Pods-Rns-testapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -456,6 +548,7 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					/Users/federuiz/Desktop,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sirius.Rns-testapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
